@@ -5,6 +5,7 @@ Then do I have the solution for you! Based off of the Frontier Assistant, this r
 
 The program will create a settings file in whatever folder it is in, so it is recommended to put it in its own folder. The settings file will store what level you are playing at (50, Open Level) and any alarms you may want to add. Alarms can be made for moves, items, or species that you think would be a threat to your team, so when they come up, the moveset is displayed in a way to grab your attention so you can play more carefully around the risky moveset. You can also see how many remaining alarming moveset exists for a trainer you are up against, and what exactly set off the alarm. Alarms can be added, deleted, or toggled on or off if you are playing with a team with different weaknesses.
 
-
+DOWNLOAD: https://github.com/tylersverak/FrontierAssistant2/releases/latest
+Use the link above to download the latest release (currently Windows only) or you can download and run the Python program!
 
 Message me on Smogon forums @meleeisbetter if you have any thoughts/questions/feedback! Keep enjoying the Emerald Battle Frontier!
