@@ -110,8 +110,27 @@ def generateValidSets(trainer_name, TrainerData, MovesetData, user_settings, spe
         Could expand what species data is added to each Pokemon, like Legendary
         status or base stats.
     """
+    if trainer_name.upper() == "GILLIAN":
+        gillians = TrainerData.loc[["GILLIAN"]]
 
-    trainerSets = list(TrainerData.loc[[trainer_name]].values[0])
+        print("Which GILLIAN do you mean? Enter 'c' for Cooltrainer (F), and 'l' for Lady.")
+
+        while True:
+            chosen = input().strip().lower()
+
+            if chosen == 'c':
+                trainer_row = gillians[gillians['Class'] == "Cooltrainer (F)"].iloc[0]
+                break
+
+            elif chosen == 'l':
+                trainer_row = gillians[gillians['Class'] == "Lady"].iloc[0]
+                break
+
+            print("Invalid class, try again.")
+    else:
+        trainer_row = TrainerData.loc[trainer_name]
+
+    trainerSets = list(trainer_row.values)
     del trainerSets[0]
     trainerSets = [x for x in trainerSets if x == x] # Removes NaN sets
     PokemonList = []
